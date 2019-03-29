@@ -99,7 +99,6 @@ p {
 
 .sample6 img {
     border-radius: 50%;
-    margin-right: 10px;
     vertical-align: middle;
     width: 30px;
     height: 30px;
@@ -107,4 +106,88 @@ p {
 
 .sample6 p {
     padding-left: 40px;
+}
+
+
+
+
+.sample7 p{
+    padding-left: 40px;
+}
+.sample7 h2 {
+    padding-left: 40px;
+    background: url('./pic.jpg') no-repeat;
+    background-size: 30px 30px;
+}
+
+
+
+
+.sample8 {
+    padding-left: 50px;
+}
+.sample8 h2 {
+    text-indent: -40px;
+}
+.sample8 h2 img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+.sample9 {
+    display: flex;
+}
+.sample9 .pic {
+    flex: 0 0 40px;
+}
+.sample9 .text {
+    flex: 1 1 auto;
+}
+.sample9 h2 img {
+    border-radius: 50%;
+}
+
+
+
+.sample10 {
+    display: grid;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: 40px 1fr;
+    grid-template-areas: 
+        'pic title'
+        '. txt'
+}
+.sample10 .pic {
+    grid-area: pic;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.sample10 h2 {
+    grid-area: title;
+}
+.sample10 .text {
+    grid-area: txt;
+}
+
+
+.sample11 {
+    display: grid;
+    grid-auto-rows: auto auto;
+    grid-auto-columns: 40px 1fr;
+    grid-template-areas: 
+        'pic txt'
+        '. txt'
+}
+.sample10 .pic {
+    grid-area: pic;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.sample10 .text {
+    grid-area: txt;
 }
